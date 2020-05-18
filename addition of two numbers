@@ -1,0 +1,8 @@
+#include <stdio.h>              // standard input output in header extention
+main()
+{
+  int i=2;
+  int j=3;
+  int k=i+j;
+  printf("The addition of %d and %d is %d",i,j,k);    // printf means Print Format
+}
