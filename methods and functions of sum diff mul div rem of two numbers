@@ -1,0 +1,49 @@
+
+#include <stdio.h>
+
+float add(int i, int j)
+{
+    int add=i+j;
+    return add;
+}
+float sub(int i, int j)
+{
+    int sub=i-j;
+    return sub;
+}
+float mul(int i, int j)
+{
+    int mul=i*j;
+    return mul;
+}
+float divi(int i, int j)
+{
+    int divi=i/j;
+    return divi;
+}
+float rem(int i, int j)
+{
+    int rem=i%j;
+    return rem;
+}
+
+
+float main()
+{
+    float i,j;
+    printf("Enter two values: \n" );
+    scanf("%f",&i);  
+    scanf("%f",&j);
+    float addition=add(i,j);
+    float difference=sub(i,j);
+    float product=mul(i,j);
+    float division=divi(i,j);
+    float remainderr=rem(i,j);
+    printf("addition of %f and %f is %f \n",i,j,addition);
+    printf("difference of %f and %f is %f \n",i,j,difference);
+    printf("product of %f and %f is %f \n",i,j,product);
+    printf("division of %f and %f is %f \n",i,j,division);
+    printf("remainder of %f and %f is %f \n",i,j,remainderr);
+    return 0;
+}
+
