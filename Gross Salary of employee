@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main()
+{
+    float basic, gross, da, hra, Conveyance;
+
+    /* Input basic salary of employee */
+    
+    printf("Enter basic salary : ");
+    scanf("%f", &basic);
+
+
+    /* Calculate D.A H.R.A and Conveyance according to specified conditions */
+    
+    if(basic >= 5000)
+    {
+        da  = basic * 1.1;
+        hra = basic * 0.2;
+        Conveyance = 500;
+    }
+    
+    else if(basic >= 3000 && basic <5000)
+    {
+        da  = basic * 1;
+        hra = basic * 0.15;
+        Conveyance = 400;
+    }
+    
+    else if(basic < 3000)
+    {
+        da  = basic * 0.9;
+        hra = basic * 0.1;
+        Conveyance = 300;
+    }
+    
+    /* else
+    {
+        printf("Try Again, Invalid input basic salary");
+    } 
+    */
+
+    /* Calculate gross salary */
+    gross = basic + hra + da + Conveyance;
+
+    printf("Gross Salary : %.2f", gross);
+
+    return 0;
+}
